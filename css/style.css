@@ -35,7 +35,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 50vh;
     display: flex;
     background-color: white;
     border-radius: 10px;
@@ -45,95 +45,106 @@ body {
     margin-bottom: 4rem;
     display: flex;
     justify-content: space-between;
+    justify-content: center;
 }
 
 .login-button button {
     width: 100%;
-    margin-top: 0.5rem;
+    margin-top: 0.4rem;
     border: none;
     background-color: #76c1ff;
-    padding: 0.62rem 11rem;
-    border-radius: 5px;
+    padding: 0.62rem;
+    border-radius: 10px;
     cursor: pointer;
     text-decoration: none;
-    color: #fff;
-    font-size: 0.80rem;
+    font-size: 0.93rem;
     font-weight: 500;
+    color: #fff;
 }
 
 .login-button button:hover {
-    background-color: #61b8ff;
-}
-
-.forget-password button {
-    width: 100%;
-    margin-top: 0.32rem;
-    border: none;
-    background-color: #76c1ff;
-    padding: 0.60rem 8rem;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    color: #fff;
-    font-size: 0.80rem;
-    font-weight: 500;
-    
+    background-color: #5cb5fd;
 }
 
 .create-account button {
     width: 100%;
-    margin-top: 0.32rem;
+    margin-top: 0.4rem;
     border: none;
     background-color: #76c1ff;
     padding: 0.62rem;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-size: 0.80rem;
+    font-size: 0.93rem;
     font-weight: 500;
+    color: #fff;
 }
 
-.create-account button:hover {
-    background-color: #61b8ff;
+.forget-password button {
+    width: 100%;
+    margin-top: 0.4rem;
+    border: none;
+    background-color: #76c1ff;
+    padding: 0.62rem;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
 }
 
-.forget-password button:hover {
-    background-color: #61b8ff;
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 2.4rem;
+    height: 0.2rem;
+    background-color: #76c1ff;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.input-group {
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+ 
 }
 
 .input-box {
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
-    
-}
 
-.input-box input:hover {
-    background-color: rgb(245, 245, 245);
+    
 }
 
 .input-box input {
     outline: none;
     padding-left: 10px;
-    width: 30vw;
+    width: 20vw;
     height: 5vh;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 1px 1px 5px #0000001c;
-    font-size: 0.8rem; 
+    font-size: 0.8rem;
 }
 
-.input-box label{
-    font-size: 0.85rem;
+.input-box input:hover {
+    background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #76c1ff;
+}
+
+.input-box label, h6 {
+    font-size: 0.75rem;
     font-weight: 600;
     color: #000000c0;
-    margin-bottom: 6px;
-    }
+    margin-bottom: 0.5rem;
 
-.input-box ::placeholder {
-    padding: 0;
-    text-align: left;
 }
 
 
@@ -142,40 +153,27 @@ body {
             display: none;
         }
         .title {
-            width: 100%;
+            width: 90%;
             justify-content: center;
             align-items: center;
             display: flex;
-            height: 2rem;
         }
         .form {
             width: 100%;
         }
-
     
-    @media screen and (max-width: 420px) {
-
+    @media screen and (max-width: 580px) {
         .input-box{
-            margin: 3.3rem;
             width: 100%;
             justify-content: center;
             align-items: center; 
             flex-direction: row;
             display: grid;
-            padding-right: 6.3rem;
             
     }
     .input-box input {
         width: 40vh;
     }
 
-        .buttons {
-            margin: auto;
-            max-width: max-content;
-            display: grid;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            }
         }
     }
