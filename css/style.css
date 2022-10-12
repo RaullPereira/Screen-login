@@ -136,6 +136,7 @@ body {
     text-align: left;
 }
 
+
     @media screen and (max-width: 1024px) {
         .form-image {
             display: none;
@@ -152,29 +153,29 @@ body {
         }
 
     
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 420px) {
 
         .input-box{
-            margin: 3rem;
+            margin: 3.3rem;
             width: 100%;
-            display: flex;
             justify-content: center;
-            align-items: center;   
+            align-items: center; 
+            flex-direction: row;
+            display: grid;
+            padding-right: 6.3rem;
             
     }
-
     .input-box input {
         width: 40vh;
     }
 
-        .login-button {
-            width: 100
-        }
-        .input-box {
-            flex-direction: row;
+        .buttons {
+            margin: auto;
+            max-width: max-content;
             display: grid;
-            z-index: 5;
-            padding-right: 9rem;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            }
         }
     }
-}
